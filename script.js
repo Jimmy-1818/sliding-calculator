@@ -76,7 +76,7 @@ function autentica_calc(){
     document.getElementById("autentica_result").innerHTML = result
 
     var result2 = 0
-    var monthly = 50
+    var monthly = 30
 
     result2 = (s1*(monthly/50)) + (s1*s2*(monthly/100)) + (s1*s2*s3*(monthly/100)) + (s1*s2*s3*s4*(monthly/100)) + (s1*s2*s3*s4*s5*(monthly/50))
     document.getElementById("rendita_result").innerHTML = result2
