@@ -71,15 +71,25 @@ function autentica_calc(){
     var s4 = document.getElementById("tip4").value
     var s5 = document.getElementById("tip5").value
 
+
     var result = 0
-    result = ((s1*10) + (s1*s2*0.5) + (s1*s2*s3*1) + (s1*s2*s3*s4*1.5) + (s1*s2*s3*s4*s5*2))
-    document.getElementById("autentica_result").innerHTML = result
 
     var result2 = 0
     var monthly = 30
 
+
+    result = ((s1*10) + (s1*s2*0.5) + (s1*s2*s3*1) + (s1*s2*s3*s4*1.5) + (s1*s2*s3*s4*s5*2))
     result2 = (s1*(monthly/50)) + (s1*s2*(monthly/100)) + (s1*s2*s3*(monthly/100)) + (s1*s2*s3*s4*(monthly/100)) + (s1*s2*s3*s4*s5*(monthly/50))
-    document.getElementById("rendita_result").innerHTML = result2
+
+    var result2_eur = new Intl.NumberFormat("en-EN", { style: "currency", "currency":"EUR" }).format(result2);
+    var result_eur = new Intl.NumberFormat("en-EN", { style: "currency", "currency":"EUR" }).format(result);
+    console.log(result2_eur)
+    console.log(result_eur)
+
+
+
+    document.getElementById("rendita_result").innerHTML = result2_eur
+    document.getElementById("autentica_result").innerHTML = result_eur
 
 }
 
