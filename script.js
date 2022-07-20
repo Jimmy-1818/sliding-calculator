@@ -83,8 +83,6 @@ function autentica_calc(){
 
     var result2_eur = new Intl.NumberFormat("de-DE", { style: "currency", "currency":"EUR" }).format(result2);
     var result_eur = new Intl.NumberFormat("de-DE", { style: "currency", "currency":"EUR" }).format(result);
-    console.log(result2_eur)
-    console.log(result_eur)
 
 
 

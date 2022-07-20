@@ -2,15 +2,14 @@
     font-family: Helvetica, Opens-sans, sans-serif;
 }
 
-body{
-    background: #ccc;
-}
 
 .wrapper {
     width: 800px;
     margin: 50px auto 0;
     padding: 60px 30px;
     border: 1px solid #000;
+    border-radius: 45px;
+    background: lightyellow;
 }
 
 .wrapper__title {
